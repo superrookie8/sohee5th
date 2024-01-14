@@ -1,7 +1,8 @@
 import React from "react";
+import Daynotice from "./Daynotice";
 
 const Main = () => {
-	return <div>Hello, Main!</div>;
+	return <Daynotice />;
 };
 
 export default Main;
