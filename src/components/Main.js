@@ -1,8 +1,9 @@
 import React from "react";
 import Daynotice from "./Daynotice";
+import Layout from "./Layout";
 
 const Main = () => {
-	return <Daynotice />;
+	return <Layout></Layout>;
 };
 
 export default Main;
