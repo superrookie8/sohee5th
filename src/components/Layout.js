@@ -97,7 +97,6 @@ const FilmContainer = styled.div`
 width : 100%;
 height :500px;
 
-margin-bottom: 40px;
 /* background-color : green; */
 display: flex;
 flex-direction: column;
@@ -140,6 +139,9 @@ display: flex;
 flex-direction: column;
 justify-content: space-between;
 align-items: center;
+background-image: url('filmbackground2.png'); // 배경 이미지 설정
+  background-repeat: repeat; // 이미지 반복
+  background-size: 360px 480px;
 
 @media (max-width: 1024px) {
     height: 4000px; // 더 큰 화면에서의 높이 증가

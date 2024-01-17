@@ -8,6 +8,7 @@ const TextContainer = styled.div`
   padding: 30px; // 내부 여백
   max-width: 600px; // 최대 너비 설정
   margin: auto; // 자동 마진으로 중앙 정렬
+  background-color: white;
   @media (max-width: 768px) {
     margin: 20px; // 화면 너비가 500px 이하일 때 여백
   }

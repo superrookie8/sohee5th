@@ -9,6 +9,7 @@ const ScheduleContainer = styled.div`
   padding: 20px;
   margin: 20px;
   max-width: 630px;
+  background-color: white;
 
   @media (max-width: 768px) {
     margin: 15px;
