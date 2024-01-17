@@ -114,14 +114,6 @@ function Event() {
 				부산 지하철 3호선 종합운동장역에 붙어있는 광고판도 인증을 해주시면
 				더더더 좋습니다!
 			</Content>
-			<Content>여기서 퀴즈하나 나갑니다.</Content>
-			<Content>
-				인증도 하고, 퀴즈도 맞히신 분들중 두 분께는 후드티 선물로
-				드리겠습니다!(디자인 변동가능..!)
-			</Content>
-			<ImageContainer>
-				<HoodieImage src="hood.png" alt="후드" />
-			</ImageContainer>
 			<Spacer />
 			<SubTitle>Quiz!!!</SubTitle>
 			<Content>**문제**</Content>
@@ -136,6 +128,14 @@ function Event() {
 			<ButtonContainer>
 				<Button onClick={handleButtonClick}>폼작성</Button>
 			</ButtonContainer>
+			<Spacer />
+			<Content>
+				**인증도 하고, 퀴즈도 맞히신 분들중 두 분께는 후드티 선물로
+				드리겠습니다!(디자인 변동가능..!)
+			</Content>
+			<ImageContainer>
+				<HoodieImage src="hood.png" alt="후드" />
+			</ImageContainer>
 			<Spacer />
 			<Content>
 				결과는 1월 27일 이후, 이 웹사이트 및 인스타 계정에 업로드 해두겠습니다.
