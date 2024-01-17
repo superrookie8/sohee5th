@@ -103,12 +103,12 @@ function Event() {
 			</Content>
 			<Spacer />
 			<Spacer />
-			<TContent>
-				2. 각자의 SNS에 #소희야프로데뷔5주년축하해 #프로데뷔5주년 #이소희선수
-				#부산bnk썸 등의 해시태그를 붙여서 업로드한다.
-			</TContent>
+			<TContent>2. 각자의 SNS에 해시태그를 붙여서 업로드하기</TContent>
+			<Content>
+				#소희야프로데뷔5주년축하해 #프로데뷔5주년 #이소희선수 #부산bnk썸
+			</Content>
 			<Content style={{ paddingLeft: "20px" }}>
-				(예)인스타 스토리에 해시태그를 달고 올린다.{" "}
+				(예)인스타 스토리에 1개 이상 해시태그를 달아서 업로드{" "}
 			</Content>
 			<Content>
 				부산 지하철 3호선 종합운동장역에 붙어있는 광고판도 인증을 해주시면
@@ -121,8 +121,6 @@ function Event() {
 				영상에 등장한 소희선수의 등번호를 모두 나열해 주세요!!
 			</TContent>
 			<Content>답은 폼작성 부탁드립니다!ㅋㅋ</Content>
-
-			<Spacer />
 			<Content> 인증 후 폼 작성해주시면 감사하겠습니다..!</Content>
 			<Spacer />
 			<ButtonContainer>
