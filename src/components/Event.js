@@ -118,7 +118,9 @@ function Event() {
 				인증도 하고, 퀴즈도 맞히신 분들중 두 분께는 후드티 선물로
 				드리겠습니다!(디자인 변동가능..!)
 			</Content>
-			<HoodieImage src="hood.png" alt="후드" />
+			<ImageContainer>
+				<HoodieImage src="hood.png" alt="후드" />
+			</ImageContainer>
 			<Spacer />
 			<SubTitle>Quiz!!!</SubTitle>
 			<Content>**문제**</Content>
