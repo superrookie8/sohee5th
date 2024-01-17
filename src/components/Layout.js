@@ -96,13 +96,16 @@ align-items: center;
 const FilmContainer = styled.div`
 width : 100%;
 height :500px;
-margin-top : 40px;
+
 margin-bottom: 40px;
 /* background-color : green; */
 display: flex;
 flex-direction: column;
 justify-content: center;
 align-items: center;
+background-image: url('filmbackground2.png'); // 배경 이미지 설정
+  background-repeat: repeat; // 이미지 반복
+  background-size: contain; // 이미지 확대 없이 원본 크기 유지
 
 iframe {
     width: 720px; // 기본 너비
