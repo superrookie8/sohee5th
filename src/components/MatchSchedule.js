@@ -179,7 +179,7 @@ function MatchSchedule() {
 			>
 				BNK썸 팀블로그로 이동
 			</Button>
-			<Image src="price.png" alt="가격표" />
+			<Image src="price2.png" alt="가격표" />
 		</ScheduleContainer>
 	);
 }
