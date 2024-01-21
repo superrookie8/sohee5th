@@ -122,7 +122,7 @@ function MatchSchedule() {
 						<td>2월 17일</td>
 						<td>토요일</td>
 						<td>신한은행</td>
-						<td>14시</td>
+						<td>14시 (창원!)</td>
 					</tr>
 					<tr>
 						<td>2월 22일</td>
@@ -164,6 +164,20 @@ function MatchSchedule() {
 				onClick={() => (window.location.href = "https://www.wkbl.or.kr/main/")}
 			>
 				WKBL 웹사이트로 이동
+			</Button>
+			<Button
+				onClick={() =>
+					(window.location.href = "http://www.bnksumbasket.com/index.php")
+				}
+			>
+				BNK썸 웹사이트로 이동
+			</Button>
+			<Button
+				onClick={() =>
+					(window.location.href = "https://blog.naver.com/bnksum0624")
+				}
+			>
+				BNK썸 팀블로그로 이동
 			</Button>
 			<Image src="price.png" alt="가격표" />
 		</ScheduleContainer>

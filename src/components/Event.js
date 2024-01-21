@@ -75,7 +75,7 @@ function Event() {
 			<TContent>2024년 1월 18일 (vs 신한은행) 홈경기</TContent>
 			<TContent>2024년 1월 26일 (vs KB스타즈) 홈경기</TContent>
 			<Content> 직관 또는 집관을 인증해주세요!</Content>
-			<Content> 선수들 응원도 당연히!!</Content>
+			<Content> 선수들 응원도 당연히 가능합니다!!</Content>
 			<Content>
 				약소하지만 인증 해주신 모든 분들께 스티커와 키링을 선물로 드리려 해요.
 			</Content>
@@ -105,7 +105,7 @@ function Event() {
 			<Spacer />
 			<TContent>2. 각자의 SNS에 해시태그를 붙여서 업로드하기</TContent>
 			<Content>
-				#소희야프로데뷔5주년축하해 #프로데뷔5주년 #이소희선수 #부산bnk썸
+				#프로데뷔5주년 #이소희선수 #부산bnk썸 #소희야프로데뷔5주년축하해
 			</Content>
 			<Content style={{ paddingLeft: "20px" }}>
 				(예)인스타 스토리에 1개 이상 해시태그를 달아서 업로드{" "}
