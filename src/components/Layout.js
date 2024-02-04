@@ -3,8 +3,14 @@ import styled from "styled-components";
 import FiveAnni from "./FiveAnni";
 import Event from "./Event";
 import MatchSchedule from "./MatchSchedule";
+import { useState } from "react";
 
 function Layout() {
+	const [showContainer, setShowContainer] = useState(false);
+	const toggleContainer = () => {
+		setShowContainer(!showContainer);
+	};
+
 	return (
 		<AllLayout>
 			<TitleContainer>
@@ -22,10 +28,18 @@ function Layout() {
 					allowfullscreen
 				></iframe>
 			</FilmContainer>
+
 			<NoticeContainer>
-				<EventContainer>
-					<Event />
-				</EventContainer>
+				<EventAnounce>
+					이벤트에 참여해주신 분들 감사합니다.🙇🏻‍♀️ <br /> 개별연락 드리겠습니다!📫
+				</EventAnounce>
+				<EventButton onClick={toggleContainer}>이벤트 내용 (클릭)</EventButton>
+				{showContainer && (
+					<EventContainer isVisible={showContainer}>
+						<Event />
+					</EventContainer>
+				)}
+
 				<MatchScheduleContainer>
 					<MatchSchedule />
 				</MatchScheduleContainer>
@@ -133,7 +147,7 @@ iframe {
 
 const NoticeContainer = styled.div`
 width : 100%;
-height : 4000px;
+height : ${({ isVisible }) => (isVisible ? "4000px" : "auto")};
 /* background-color: yellow; */
 display: flex;
 flex-direction: column;
@@ -144,24 +158,45 @@ background-image: url('filmbackground2.png'); // 배경 이미지 설정
   background-size: 360px 480px;
 
 @media (max-width: 1024px) {
-    height: 4000px; // 더 큰 화면에서의 높이 증가
+    height: ${({ isVisible }) =>
+			isVisible ? "4000px" : "auto"};// 더 큰 화면에서의 높이 증가
   
   }
 @media (max-width: 768px) {
-    height: 4000px; // 더 큰 화면에서의 높이 증가
+    height:${({ isVisible }) =>
+			isVisible ? "4000px" : "auto"};// 더 큰 화면에서의 높이 증가
   }
 
   @media (max-width: 500px) {
-    height: 3500px; // 500px 이하에서 높이 증가
+    height:${({ isVisible }) =>
+			isVisible ? "3500px" : "auto"}; // 500px 이하에서 높이 증가
   }
 
   @media (max-width: 430px) {
-    height: 3200px; // 430px 이하에서 높이 증가
+    height: ${({ isVisible }) =>
+			isVisible ? "3200px" : "auto"}; // 430px 이하에서 높이 증가
   }
 
   @media (max-width: 360px) {
-    height: 2500px; // 360px 이하에서 높이 증가
+    height:${({ isVisible }) =>
+			isVisible ? "2500px" : "auto"}; // 360px 이하에서 높이 증가
   }
+`;
+
+const EventButton = styled.div`
+display: flex;
+flex-direction: column;
+align-items: center;
+justify-content: center;
+width : 300px;
+height : 50px;
+font-family:'GmarketSans', sans-serif;
+font-size: 24px;
+font-weight: bold;
+border : 4px red solid;
+border-radius : 5%;
+margin-top: 20px;
+margin-bottom:20px;
 `;
 
 const BackgroundContainer = styled.div`
@@ -183,13 +218,28 @@ const BackgroundContainer = styled.div`
   }
 `;
 
+const EventAnounce = styled.div`
+width : 100%;
+display: flex;
+flex-direction: column;
+align-items: center;
+justify-content: center;
+background-color: white;
+border: 4px white solid;
+border-radius: 5%;
+font-size: larger;
+text-align: center; /* 텍스트를 가운데 정렬합니다 */
+
+`;
+
 const EventContainer = styled.div`
 display: flex;
 flex-direction: column;
 justify-content: center;
 align-items: center;
 width : 100%;
-height : 50%;
+height : ${({ isVisible }) => (isVisible ? "50%" : "0")};
+overflow: hidden;
 
 `;
 
