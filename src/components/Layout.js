@@ -197,6 +197,13 @@ border : 4px red solid;
 border-radius : 5%;
 margin-top: 20px;
 margin-bottom:20px;
+
+cursor: pointer;
+
+  &:hover {
+    background-color: red;
+    color: white;
+  }
 `;
 
 const BackgroundContainer = styled.div`
